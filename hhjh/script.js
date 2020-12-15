@@ -8,16 +8,18 @@ setInterval(function () {
 }, 5000);
 
 function myFunction() {
-  let x = document.getElementById("res-topnav");
-  if (x.className === "res-menu") {
-    x.className += " responsive";
+  let menu = document.getElementById("res-topnav");
+  // let logo = document.getElementsById("logo");
+  if (menu.className === "res-menu") {
+    menu.className += " responsive";
+    // logo.className += "men";
   } else {
-    x.className = "res-menu";
+    menu.className = "res-menu";
   }
-  let y = document.getElementById("fas");
-  if (y.className === "fas fa-bars") {
-    y.className = " fas fa-chevron-left";
+  let icon = document.getElementById("fas");
+  if (icon.className === "fas fa-bars") {
+    icon.className = " fas fa-chevron-left";
   } else {
-    y.className = "fas fa-bars";
+    icon.className = "fas fa-bars";
   }
 }
